@@ -1,0 +1,1 @@
+C:\Users\wgdun\source\repos\NLSampleApp\NLSampleApp.csproj;x64

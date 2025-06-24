@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="NLSampleApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NLSampleApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="NLSampleApp">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <Grid Padding="20" RowSpacing="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Spacing="12" Grid.Row="0">
+            <TextBlock Text="Select Game:" VerticalAlignment="Center" />
+            <ComboBox x:ConnectionId='5'
+                x:Name="GameComboBox"
+                Width="300"
+                DisplayMemberPath="label"
+                SelectedValuePath="value" />
+        </StackPanel>
+
+        <TextBox x:ConnectionId='2' x:Name="InputBox"
+                 Grid.Row="1"
+                 Header="Your Question"
+                 AcceptsReturn="True"
+                 Height="100"
+                 TextWrapping="Wrap"
+                 Margin="0,8,0,0" />
+
+        <Button x:ConnectionId='3' Content="Submit"
+                Grid.Row="2"
+                Width="100"
+                Margin="0,8,0,0"
+                                     />
+
+        <TextBox x:ConnectionId='4' x:Name="OutputBox"
+                 Grid.Row="3"
+                 Header="AI Response"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 IsReadOnly="True"
+                 Margin="0,8,0,0" />
+    </Grid>
+</Window>
+
+
