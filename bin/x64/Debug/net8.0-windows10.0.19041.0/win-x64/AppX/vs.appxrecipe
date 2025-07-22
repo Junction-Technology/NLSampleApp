@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\wgdun\source\repos\NLSampleApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-06-24T21:02:09.716</Modified>
+      <Modified>2025-07-22T20:30:38.756</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wgdun\source\repos\NLSampleApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\NLSampleApp.dll">
       <PackagePath>NLSampleApp.dll</PackagePath>
-      <Modified>2025-06-24T21:02:09.512</Modified>
+      <Modified>2025-07-22T14:41:55.791</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wgdun\source\repos\NLSampleApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>NLSampleApp.exe</PackagePath>
-      <Modified>2025-06-24T21:02:09.515</Modified>
+      <Modified>2025-07-22T14:41:55.863</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wgdun\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.17\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

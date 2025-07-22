@@ -30,6 +30,12 @@ namespace NLSampleApp
         public string type { get; set; }
         public ObservableCollection<Game> games { get; set; }
     }
+    public class GameAnalysisRequestClient
+    {
+        public string Query { get; set; }
+        public string Source { get; set; }
+
+    }
 
     public partial class MainWindow : Window
     {
@@ -147,11 +153,6 @@ namespace NLSampleApp
                             }
                             else if (message.CommandType.ToLower() == "helloresponse")
                             {
-                                dispatcherQueue.TryEnqueue(() =>
-                                {
-                                    OutputBox.Text = "Received helloresponse. Attempting to send getgames...";
-                                });
-
                                 try
                                 {
                                     await SendMessage(updateSocket, new UIMessage { CommandType = "getgames", Data = "" });
@@ -175,6 +176,12 @@ namespace NLSampleApp
                             {
                             }
                             else if (message.CommandType.ToLower() == "updatematchstats")
+                            {
+                            }
+                            else if (message.CommandType.ToLower() == "setcurrentgame")
+                            {
+                            }
+                            else if (message.CommandType.ToLower() == "gameanalysisstrings")
                             {
                             }
                             else
